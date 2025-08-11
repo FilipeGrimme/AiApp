@@ -35,7 +35,12 @@ export default function History(props) {
                         
                         </button>
 
-                        {isActive && <button onClick={() => props.delete(chat.id)} className="clear-btn"><img src={clear} alt="clear chat" className="icon-clear"/></button>}
+                        {isActive && 
+                        <button 
+                            onClick={() => props.delete(chat.id)} 
+                            className="clear-btn">
+                            <img src={clear} alt="clear chat" className="icon-clear"/>
+                        </button>}
                     </div>
 
                 </li>
@@ -50,7 +55,13 @@ export default function History(props) {
 
             <div className="sidebar-top">
 
-                <button type="button" className="sidebar-new" aria-label="New Chat" onClick={()=> props.onNewChat()}><img src={newChatImg} alt="new chat" className="icon"/> New Chat</button>
+                <button
+                    type="button"
+                    className="sidebar-new" 
+                    aria-label="New Chat" 
+                    onClick={()=> props.onNewChat()}>
+                    <img src={newChatImg} alt="new chat" className="icon"/> New Chat
+                </button>
 
             </div>
 

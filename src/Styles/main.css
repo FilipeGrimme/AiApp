@@ -1,7 +1,4 @@
-/* * {
-  outline: 1px solid red !important;
-} */
-
+/* ===== Global Styles ===== */
 body {
     min-height: 100vh;
     margin: 0;
@@ -164,7 +161,7 @@ body {
 }
 
 .sidebar-new {
-    display: inline-flex; 
+    display: flex; 
     align-items: center; 
     gap: 5px; 
 }
@@ -187,7 +184,7 @@ body {
     position: absolute;
     right: 5px;
     top: 50%;
-    transform: translateY(-50%); /* vertically center */
+    transform: translateY(-50%);
     background-color: transparent;
     border: none;
     cursor: pointer;
